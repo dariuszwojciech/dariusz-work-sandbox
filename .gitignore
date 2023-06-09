@@ -3,3 +3,4 @@
 /_out_/
 /_gen_/
 .env
+*.pyc
