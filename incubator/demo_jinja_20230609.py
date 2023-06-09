@@ -2,12 +2,13 @@ import os
 
 from jinja2 import Environment, FileSystemLoader
 
+from incubator.common_utils import create_folder
+
 environment = Environment(loader=FileSystemLoader(r"templates/"))
 
 gen_folder = "../_gen_/"
 
-if not os.path.exists(gen_folder):
-    os.makedirs(gen_folder)
+create_folder(gen_folder)
 
 template = environment.get_template("demo_template.j2t")
 
