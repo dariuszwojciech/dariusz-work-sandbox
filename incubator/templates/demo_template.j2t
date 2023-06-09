@@ -1,0 +1,31 @@
+# This is an example template.
+> Date: {{date}}
+
+It could be a lot of things (repetitive, boring, error-prone, etc.):
+- source code file, e.g., python, test, etc.
+- SQL script
+- HTML (think Flask, Django, etc.)
+- create reports, slides - based on a single source of information (db, csv, API, etc.)
+- 1000 emails you need to write to your team
+
+
+## Make sure you talk to your team
+{% for person in team_members %}
+- [ ] {{ person }} - we need to catch up and talk about some stuff{% endfor %}
+
+
+## {{header.upper()}} - only a handful
+{% for day in days_of_week %}
+- [ ] {{ day }}{% endfor %}
+
+## Remember to mention
+{% for item in things_to_remember %}
+- {{ item }}
+{% endfor %}
+
+> [RealPython - Jinja Primer](https://realpython.com/primer-on-jinja-templating/)
+
+> If you want to know more about Jinja, code generation and other (useful) stuff, please get in touch!
+
+> [Tools and more](https://dariuszworks.co.uk/blog/posts/tools-i-use/)
+
